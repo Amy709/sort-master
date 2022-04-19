@@ -140,19 +140,16 @@ class App extends Component {
             />
         );
 
-        return ( <
-            div className = { theme } >
+        return ( 
+            <div className = { theme } >
 
-            <
-            TopBar drawerOpen = { this.state.appDrawerOpen }
-            toggleDrawer = { this.toggleAppDrawer } > { controls } <
-            /TopBar>
+            <TopBar drawerOpen = { this.state.appDrawerOpen }
+            toggleDrawer = { this.toggleAppDrawer } > { controls } </TopBar>
 
 
-            <
-            AppDrawer open = { this.state.appDrawerOpen }
-            closeDrawer = { this.toggleAppDrawer } > { controls } <
-            /AppDrawer>
+            <AppDrawer open = { this.state.appDrawerOpen }
+            closeDrawer = { this.toggleAppDrawer } > { controls } </AppDrawer>
+            
 
 
             <
@@ -162,12 +159,11 @@ class App extends Component {
             trace = { this.state.trace }
             colorKey = { colorKey }
             desc = { desc }
-            />  <
-            /main> <
+            />  
+            </main> <
             Footer / >
 
-            <
-            /div>
+            </div>
         );
     }
 }
